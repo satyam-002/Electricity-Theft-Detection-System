@@ -156,3 +156,10 @@ if __name__ == "__main__":
         port=5000,
         debug=True
     )
+
+@app.route("/")
+def home():
+    return {
+        "status": "running",
+        "message": "Smart Electricity Theft Detection System is live"
+    }
